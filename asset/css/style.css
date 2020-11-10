@@ -1,0 +1,434 @@
+
+/*
+
+TASK     	: SISTEM INFORMASI PENJUALAN, PEMBELIAN DAN PERSEDIAAN BARANG PADA TOKO BAHAN BANGUNAN PALANGJAYA
+AUTHOR   	: VICKY RAHADIAN FIRMANSYAH (1274001)
+EMAIL    	: vicky.rahadian@gmail.com
+COMP     	: UNIVERSITAS KRISTEN MARANATHA BANDUNG
+FILE     	: style2.css
+DESC     	: Merupakan file css yang digunakan untuk semua halaman aplikasi
+CREATED 	: 6/12/2013
+REVISION 	: -
+
+*/
+
+
+html, body {
+    font-family: "Segoe UI", sans-serif, Verdana, Arial;
+    font-size: 13px;
+    background-color: #e9e9e9;
+}
+
+table{
+    font-size:13px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
+
+#navbar {
+    background-image: url(../images/bg_dev_head.jpg);
+}
+
+#navbar_wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+/*------------banner------------*/
+
+#banner {
+    clear: both;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #CCC;
+}
+
+#banner_wrapper {
+    width: 1200px;
+    height: 60px;
+    margin: auto;
+}
+
+#banner #banner_wrapper #logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40px;
+    width: 126px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+#banner #banner_wrapper #quick_menu {
+    float: left;
+    width: 874px;
+    height: 15px;
+    padding-top: 25px;
+}
+
+#banner #banner_wrapper #profile_box { 
+    width: 196px;
+    height: 56px;
+    float: right;
+    padding:2px;
+}
+
+#banner #banner_wrapper #profile_box #username_dp { 
+    padding:2px;
+    height:28px;
+    width:28px;
+    float:left;
+    margin-top:5px;
+}
+
+#banner #banner_wrapper #profile_box #username { 
+    padding:2px;
+    width:150px;
+    float:right;
+    margin-top:12px;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+#banner #banner_wrapper #profile_box #username_profile { 
+    padding:2px;
+    width:150px;
+    float:right; 
+    margin-left:10px;
+}
+
+#banner #banner_wrapper #profile_box #username_profile a{ 
+    text-decoration:none;
+    color:#000;
+}
+
+/*-----------content------------*/
+
+#content {
+    clear: both;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #CCC;
+    padding: 25px 0;
+}
+
+#content_wrapper {
+    width: 1200px;
+    margin: auto;
+}
+/*------------footer------------*/
+
+#footer {
+    clear: both;
+    border-top: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+}
+/*------------tabel-------------*/
+
+#content_table2{
+    font-size: 12px;
+}
+
+#content_table2 td{
+    padding: 4px 0px;
+} 
+
+#content_table {
+    border: 2px solid #000;
+    background: #fff;
+}
+
+#content_table th {
+    font-size: 11px;
+    padding: 10px 10px 7px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(../images/head.gif);
+    background-repeat: repeat-x;
+    background-position: left -5px;
+}
+
+#content_table td {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content_table3 {
+    border: 2px solid #000;
+    background: #fff;
+}
+
+#content_table3 th {
+    font-size: 11px;
+    padding: 10px 10px 7px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(../images/head.gif);
+    background-repeat: repeat-x;
+    background-position: left -5px;
+}
+
+#content_table3 td {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/*-------------------- form ------------------------*/
+
+#content_form {
+    border: 2px solid #000;
+    background: #fff;
+}
+
+#content_form td {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/*--------------------tabel popup------------------------*/
+#popup_table {
+    border: 2px solid #000;
+    background: #fff;
+}
+
+#popup_table th {
+    font-size: 11px;
+    padding: 10px 10px 7px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: url(../images/head.gif);
+    background-repeat: repeat-x;
+    background-position: left -5px;
+}
+
+#popup_table td {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#popup_table  tr:hover td{
+    background: #e9e9e9;
+    cursor:pointer;
+}
+
+/*---------------------LINK-------------------------------*/
+
+a.aktifkan {
+    background: url(../images/aktif.png) left center no-repeat;
+}
+
+a.tambah {
+    background: url(../images/add.png) left center no-repeat;
+}
+
+a.detail, span.detail {
+    background: url(../images/view.png) left center no-repeat;
+}
+
+a.update {
+    background: url(../images/update.png) left center no-repeat;
+}
+
+a.delete {
+    background: url(../images/delete.png) left center no-repeat;
+}
+
+a.stok{
+    background: url(../images/stok.png) left center no-repeat;
+}
+
+a.printer{
+    background: url(../images/printer.png) left center no-repeat;
+}
+
+a.back {
+    background: url(../images/prev.gif) left center no-repeat;
+}
+
+a.tutup{
+    background: url(../images/close.png) left center no-repeat;
+}
+
+a.bayar{
+    background: url(../images/bayar.png) left center no-repeat;
+}
+/*-----------------------LAINLAIN------------------------------*/
+
+a.tambah:hover, a.update:hover, a.delete:hover, a.detail:hover, a.aktifkan:hover, a.stok:hover, a.printer:hover, a.back:hover, a.tutup:hover, a.bayar:hover , a.cek:hover{
+    color: #000;
+}
+
+a.tambah, a.detail, a.update, a.delete, a.back, a.aktifkan, a.stok , a.printer, a.back, a.tutup, a.bayar, span.detail{
+    font-size: 9pt;
+    color: #900;
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+a.tombol {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    background-color: #f6f6f6;
+    padding: 8px 35px 8px 15px;
+}
+
+a.tombol:hover {
+    background-color: #ccc;
+}
+
+span.tombol{
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    background-color: #f6f6f6;
+    padding: 5px 20px; 
+    margin: 3px;
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+span.tombol:hover{
+    background-color: #ccc;
+    border: 1px solid #999;
+}
+
+.tombol_pagination {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    background-color: #f6f6f6;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tombol_pagination:hover{
+    background-color: #ccc;
+}
+
+#tambah {
+    background-image: url(../images/b_tambah.png);
+    background-repeat: no-repeat;
+    background-position: 60px center;
+}
+
+#penjualan {
+    background-image: url(../images/b_jual.png);
+    background-repeat: no-repeat;
+    background-position: 78px center;
+}
+
+#pembelian {
+    background-image: url(../images/b_beli.png);
+    background-repeat: no-repeat;
+    background-position: 78px center;
+}
+
+#retur_jual {
+    background-image: url(../images/b_retur_jual.png);
+    background-repeat: no-repeat;
+    background-position: 78px center;
+}
+
+#retur_beli {
+    background-image: url(../images/b_retur_beli.png);
+    background-repeat: no-repeat;
+    background-position: 78px center;
+}
+
+#non_aktif {
+    background-image: url(../images/b_nonaktif.png);
+    background-repeat: no-repeat;
+    background-position: 123px center;
+}
+
+input.text {
+    border: 2px solid #aaa;
+    font-size: 12px;
+    font-family: "Segoe UI", sans-serif, Verdana, Arial;
+    height: 24px;
+}
+
+input.text:focus{
+    border: 2px solid #8F0000;
+    font-size: 12px;
+    font-family: "Segoe UI", sans-serif, Verdana, Arial;
+    height: 24px;
+
+}
+
+h1 {
+    font-size: 12pt;
+    font-weight: bold;
+    border-bottom: 2px solid #a00;
+    padding: 0px;
+    margin: 10px 0px 20px;
+}
+
+h3 {
+    padding: 0px;
+    margin: 10px 0px 20px;
+}
+
+.title_detail {
+    font-weight: bold;
+}
+
+span#pesan {
+    font-weight: bold;
+    color: #FF0F0F;
+    background-color: #EBEAB2;
+    display: inline;
+    padding: 10px;
+    border: 1px solid #f00;
+}
+
+#top_command{
+    margin: 10px 0px; 
+    height: 25px;
+    position: relative;
+}
+
+#cari{
+    font-size: 12px;
+    position: absolute;
+    left: 0px;
+}
+
+#loading{
+    position: absolute;
+    right: 0px;
+    top: 6px;
+}
+
+#totalview{ 
+    font-size: 35px; 
+    font-family: "Digital-7",  sans-serif;
+}
+/*load page*/
+
+#loadpage{
+    position:absolute; 
+    left:0px; 
+    top:0px; 
+    background-color:white; 
+    layer-background-color:white; 
+    height:100%; 
+    opacity:0.5;
+    width:100%;
+    display:none;
+}
