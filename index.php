@@ -362,9 +362,10 @@ if (isset($_SESSION['un'])) {
     terus berkarya demi kemajuan dunia IT di Indonesia
     
     Pembuat aplikasi bisa dihubungi di 
-    Email : vicky.rahadian@gmail.com
-    FB    : facebook.com/mn3mon1x
-    Twitter : @_viiickyyy
+    Email   : vicky.rahadian@gmail.com
+    FB      : https://www.facebook.com/mn3mon1x
+    Twitter : https://twitter.com/vickyrahadian
+    IG      : https://www.instagram.com/vickyrahadian
     
     silahkan kirimkan data sebagai berikut :
     Nama 
