@@ -6,8 +6,8 @@ function konek_db() {
     $passwo = "trpblstl5hfbf5r4";
     $dbname = "v4lvfzueuwuf1o7q";
 
-    $konek_db = mysql_connect($server, $userna, $passwo) or die('Cannot connect to database server');
-    $selec_db = mysql_select_db($dbname, $konek_db) or die('Cannot select database name');
+    $konek_db = mysqli_connect($server, $userna, $passwo) or die('Cannot connect to database server');
+    $selec_db = mysqli_select_db($dbname, $konek_db) or die('Cannot select database name');
 }
 
 function gantiTanggal($tanggal) {
@@ -62,8 +62,8 @@ function potongKalimat($kalimat) {
 function getSettingValue($name) {
     $revalue = '';
     $sql = "SELECT * FROM sys_setting WHERE setting_name LIKE '$name'";
-    $run = mysql_query($sql);
-    while ($row = mysql_fetch_array($run)) {
+    $run = mysqli_query($sql);
+    while ($row = mysqli_fetch_array($run)) {
         $revalue = $row['setting_value'];
     }
     return $revalue;
@@ -167,10 +167,10 @@ function terbilangRupiah($x) {
 
 function getPeriodeAktif() {
     $sql = "SELECT * FROM periode ORDER BY id_periode DESC LIMIT 1";
-    $result = mysql_query($sql);
+    $result = mysqli_query($sql);
     $revalue;
 
-    while ($row = mysql_fetch_array($result)) {
+    while ($row = mysqli_fetch_array($result)) {
         $revalue = $row['id_periode'];
     }
     return $revalue;
@@ -186,8 +186,8 @@ function cek_tanggal() {
 
     if ($date == "1") {
         $sql = "SELECT * FROM periode ORDER BY id_periode DESC LIMIT 1";
-        $query = mysql_query($sql);
-        while ($row = mysql_fetch_array($query)) {
+        $query = mysqli_query($sql);
+        while ($row = mysqli_fetch_array($query)) {
             $lastdate = $row['periode_awal'];
         }
 
