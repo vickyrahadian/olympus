@@ -1,10 +1,10 @@
 <?php
 
 function konek_db() {
-    $server = "localhost";
-    $userna = "root";
-    $passwo = "";
-    $dbname = "olympus";
+    $server = "ckshdphy86qnz0bj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $userna = "gvjkwi50cgkiacqp";
+    $passwo = "trpblstl5hfbf5r4";
+    $dbname = "v4lvfzueuwuf1o7q";
 
     @$konek_db = mysql_connect($server, $userna, $passwo) or die('Cannot connect to database server');
     @$selec_db = mysql_select_db($dbname, $konek_db) or die('Cannot select database name');
