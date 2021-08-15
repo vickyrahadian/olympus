@@ -6,8 +6,8 @@ function konek_db() {
     $passwo = "trpblstl5hfbf5r4";
     $dbname = "v4lvfzueuwuf1o7q";
 
-    @$konek_db = mysql_connect($server, $userna, $passwo) or die('Cannot connect to database server');
-    @$selec_db = mysql_select_db($dbname, $konek_db) or die('Cannot select database name');
+    $konek_db = mysql_connect($server, $userna, $passwo) or die('Cannot connect to database server');
+    $selec_db = mysql_select_db($dbname, $konek_db) or die('Cannot select database name');
 }
 
 function gantiTanggal($tanggal) {
