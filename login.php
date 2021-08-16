@@ -223,13 +223,13 @@ konek_db();
 
                 <?php
             } else if ($proses == 'login_proses') {
-                $username = mysql_real_escape_string($_POST['username']);
-                $password = mysql_real_escape_string($_POST['password']);
+                $username = mysqli_real_escape_string($_POST['username']);
+                $password = mysqli_real_escape_string($_POST['password']);
                 $password = md5($password);
 
-                $run = mysql_query("SELECT * FROM pegawai WHERE username = '$username' AND password = '$password' AND status = 1 LIMIT 1");
+                $run = mysqli_query("SELECT * FROM pegawai WHERE username = '$username' AND password = '$password' AND status = 1 LIMIT 1");
 
-                if (mysql_num_rows($run) > 0) {
+                if (mysqli_num_rows($run) > 0) {
                     while ($row = mysql_fetch_array($run)) {
                         $_SESSION['un'] = $row['username'];
                         $_SESSION['id'] = $row['id_pegawai'];
